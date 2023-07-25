@@ -1,0 +1,378 @@
+.form-container {
+  width: 375px;
+  height: 667px;
+  background-color: #eff5ff;
+  // center container vertically
+  margin-top: 25%;
+}
+
+.steps {
+  height: 172px;
+  background-image: url('/public/images/bg-sidebar-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+
+.circle {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #fff;
+  margin-top: 32px;
+
+  border-radius: 50%;
+}
+
+.step-number {
+  color: var(--white, #fff);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 8.5px 0 0 1px;
+}
+
+// step 1 style
+
+.step-one-card {
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  height: 376px;
+  border-radius: 10px;
+  background: var(--white, #fff);
+  box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.1);
+  margin-left: 16px;
+  margin-top: -74px;
+
+  h1 {
+    color: var(--denim, #022959);
+
+    font-size: 24px;
+
+    font-weight: 700;
+    margin-left: 24px;
+  }
+
+  .labels {
+    margin-left: 24px;
+    margin-bottom: 3px;
+  }
+}
+
+.paragraph-please {
+  color: var(--grey, #9699aa);
+  margin: 0 24px 22px 24px;
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 25px;
+}
+
+input {
+  cursor: pointer;
+  margin-left: 24px;
+  margin-bottom: 16px;
+  width: 295px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color, #d6d9e6);
+  background: var(--white, #fff);
+  line-height: none;
+
+  // gives the placeholder a margin-left of 16px
+  text-indent: 16px;
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--purple, #483eff);
+  }
+}
+
+.btn-container {
+  width: 375px;
+  height: 72px;
+  margin-top: 120px;
+  background-color: #fff;
+  box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.1);
+}
+
+.next-step-btn {
+  cursor: pointer;
+  width: 97px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  background: var(--denim, #022959);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 16px 16px 16px 262px;
+}
+
+// step 2 style
+.form-container-step-two {
+  height: 695px;
+}
+
+.step-two-card {
+  height: 500px;
+}
+
+.plan-two-container {
+  display: flex;
+}
+
+.plan-option {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  width: 295px;
+  height: 77px;
+  border-radius: 8px;
+  border: 1px solid var(--light-grey, #d6d9e6);
+  background: var(--white, #fff);
+  margin-left: 24px;
+  margin-bottom: 12px;
+
+  h4 {
+    color: var(--denim, #022959);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 14px 0 0 14px;
+  }
+
+  &:hover {
+    border: 1px solid var(--purple, #483eff);
+    background: var(--very-light-grey, #f8f9ff);
+  }
+}
+
+.plan-type-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cost {
+  margin-top: 7px;
+  margin-left: 14px;
+  color: var(--grey, #9699aa);
+  font-size: 14px;
+
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+  margin-top: 17px;
+}
+
+.btn-container-step-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 24px;
+  position: sticky;
+}
+
+.go-back {
+  cursor: pointer;
+  color: var(--grey, #9699aa);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 25px 0 31px 16px;
+
+  &:hover {
+    color: var(--denim, #022959);
+  }
+}
+
+.btn-step-two {
+  margin-left: 193px;
+}
+
+// checkbox
+.toggle-container {
+  margin-top: -18px;
+}
+
+input[type='checkbox'] {
+  height: 0;
+  width: 0;
+}
+
+#switch {
+  visibility: hidden;
+}
+
+.toggle {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 38px;
+  height: 20px;
+  background: #022959;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  margin: -26px 0 14px 0px;
+}
+
+.toggle:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.6s;
+}
+
+input:checked + .toggle:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.toggle-monthly-yearly-container {
+  width: 295px;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--very-light-grey, #f8f9ff);
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+.monthly {
+  color: var(--denim, #022959);
+  text-align: right;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 56px;
+  margin-top: 13px;
+  margin-right: 0;
+}
+
+.yearly {
+  color: var(--grey, #9699aa);
+
+  font-size: 14px;
+
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 13px;
+}
+
+// third step
+
+.step-three-card {
+  height: 383px;
+}
+
+.add-ons-container {
+  margin-top: -22px;
+}
+
+.add-on {
+  width: 295px;
+  height: 62px;
+  border-radius: 8px;
+  border: 1px solid var(--light-grey, #d6d9e6);
+  margin-left: 24px;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: row;
+}
+
+.add-on.selected {
+  border: 1px solid var(--purple, #483eff);
+  background: var(--very-light-grey, #f8f9ff);
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #d6d9e6;
+  background-color: #483eff;
+  visibility: visible;
+  margin-left: 16px;
+  margin-top: 21px;
+  border-radius: 4px;
+}
+
+.add-ons-p {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  p {
+    margin: 13px 0 0 16px;
+    color: var(--denim, #022959);
+
+    font-size: 14px;
+
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .sub-p {
+    color: var(--grey, #9699aa);
+    font-size: 12px;
+
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 0;
+    width: 165px;
+  }
+}
+
+.add-on-price {
+  color: var(--purple, #483eff);
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 21px 16px 21px 20px;
+}
+
+.btn-container-step-three {
+  margin-top: 142px;
+}
+
+// thank you card
+
+.thank-you-card {
+  height: 400px;
+}
+
+.thank-you-icon {
+  width: 56px;
+  height: 56px;
+  margin: 79px 143px 0 144px;
+}
+
+.thank-you-h1 {
+  text-align: center;
+}
+
+.thank-you-paragraph {
+  text-align: center;
+}

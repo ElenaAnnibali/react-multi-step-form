@@ -1,0 +1,19 @@
+@import './styles/multi-step-form';
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../../fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(190, 192, 194);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
